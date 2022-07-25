@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="q1.css">
+    <title>Wah! Ordering</title>
+</head>
+
+<script src="validate.js"></script>
+<body> 
+    <header id="head" style="font-size: 3.5vw;">Welcome to Wah! Restaurants </header>
+    <p id="menu">Click here for <a id="a" href="menu.html" target="blank" title="Menu" >MENU</a> </p>   
+    <form name="myform" action="" onsubmit="return validation()">
+        <fieldset>
+            <legend style="font-size: 2vw;font-family:'Balsamiq Sans', cursive ;">Place your order:</legend>
+            
+            <label for="name" class="label">
+                Name:
+            <input type="text" name="name" size="auto" maxlength="150" placeholder="Enter your name">
+            </label>
+            <br>
+            <label for="Date of birth" class="label">
+                Date Of birth:
+                <input type="date" name="dob"  placeholder="DD-MM-YY">
+            </label>
+            <br>
+            <img src="specials1.jfif" alt="Today's Specials" style="float: right; width:30% ; height:46vh;"> 
+            <label for="email" class="label">
+                Email:
+                <input type="email" name="mail" size="auto" placeholder="Enter the email" >
+            </label>
+            <br>
+            
+            <label for="number" class="label">
+                Contact Number:
+                <input type="tel" name="contact" placeholder="Enter your Contact number">
+            </label>
+            
+            <br>           
+            <label for="address" class="label">
+                Address:
+            <br>  
+                <textarea name="address" id="address"  cols="50" rows="8" placeholder="Enter your address"></textarea>
+            </label>
+            <br>
+            <label for="order list" class="label">
+                Enter Your Order(Choose from <a id="a" href="menu.html" target="blank" title="Menu" >MENU</a>):
+                <br>
+                <textarea name="order" id="order"  cols="50" rows="8" placeholder="Enter Your Order List"></textarea>
+            </label>
+            <br> 
+            <input type="submit" value="Submit" style="font-size: 1.5vw; background-color:dodgerblue;border-radius: 20px;">
+            <input type="reset" value="Reset" style="font-size: 1.5vw; background-color:dodgerblue;border-radius: 20px;">
+             
+    </fieldset>
+    </form>
+    <footer style="background-color: black; margin-top: 25vh; height: 6.5vh;position: fixed;z-index: 12;bottom: 0;width: 100%;">
+        
+        <p style="color: white; text-align: center; font-size: 1.5vw;">
+         CopyRights By Wah! Restaurants!!
+        </p>
+        
+    </footer>
+</body>
+</html>
